@@ -1,0 +1,23 @@
+.my-guage {
+	position: relative;
+}
+
+.my-guage .txt1 {
+	position: absolute;
+	top: 105px;
+    left: 60px;
+    font-size: 12px;
+}
+
+.my-guage .txt2 {
+	position: absolute;
+	top: 105px;
+    left: 55px;
+    font-size: 12px;
+}
+.my-guage .txt3 {
+	position: absolute;
+	top: 105px;
+    left: 65px;
+    font-size: 12px;
+}

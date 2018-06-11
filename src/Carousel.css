@@ -1,0 +1,225 @@
+/* CSS Document */
+
+
+.show-items-container a:link,
+.show-items-container a:hover,
+.show-items-container a:active,
+.show-items-container a:visited {
+  /*-webkit-transition: color 150ms;
+  transition: color 150ms;
+  color: #95a5a6;
+  text-decoration: none;*/
+}
+.show-items-container a:hover {
+  /*color: #7f8c8d;
+  text-decoration: underline;*/
+}
+
+.show-items-container .row__inner {
+  -webkit-transition: 450ms -webkit-transform;
+  transition: 450ms -webkit-transform;
+  transition: 450ms transform;
+  transition: 450ms transform, 450ms -webkit-transform;
+  font-size: 0;
+  white-space: nowrap;
+  margin: 10px 0px; /*margin: 35.3125px 0;*/
+  
+  padding-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  width: 155px;
+  height: 112px;
+  /*width: 250px;
+  height: 140.625px;*/
+ 
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: 450ms all;
+  transition: 450ms all;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+}
+.show-items-container .tile {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 140.625px;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-transition: 450ms all;
+  transition: 450ms all;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+}
+.show-items-container .tile__img {
+/*
+width: 250px;
+  height: 140.625px;*/
+  width: 150px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.show-items-container .tile__img_l {
+	position: absolute;
+    top: 32px;
+    left: 64px;
+    margin-top: -16px;
+    margin-left: -16px;
+}
+
+.show-items-container .tile__details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+  opacity: 0;
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+  -webkit-transition: 450ms opacity;
+  transition: 450ms opacity;
+}
+.show-items-container .tile__details:after,
+.show-items-container .tile__details:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: #000;
+}
+.show-items-container .tile__details2:after {
+  margin-top: -20px;
+  margin-left: -22px;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #ecf0f1;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+.show-items-container .tile__details2:before {
+  content: '?';
+  left: 0;
+  width: 100%;
+  font-size: 30px;
+  margin-left: 7px;
+  margin-top: -18px;
+  text-align: center;
+  z-index: 2;
+}
+.show-items-container .tile:hover .tile__details {
+  opacity: 1;
+  /*background: url("/img/owl.video.play.png") no-repeat;
+  background-position: center;*/ 
+}
+.show-items-container .tile__title {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  color: #fff;
+}
+.show-items-container .owl-carousel:hover .row__inner {
+  /*opacity: .5;*/
+}
+.show-items-container .owl-carousel:hover .row__inner:hover {
+  /*-webkit-transform: scale(1.5);
+          transform: scale(1.5) translate3d(-40px, 0, 0);
+			opacity: 1;
+			z-index:10;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+.show-items-container .owl-carousel .owl-item{
+	max-height: 240px;
+	}
+.show-items-container .prev, .show-items-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.show-items-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.show-items-container .prev:hover, .show-items-container .next:hover {
+  /*background-color: rgba(0,0,0,0.8);*/
+}
+
+.show-items-container2 {
+    width:500px;
+    position: relative;
+	height: 150px;
+}
+
+.show-items-container {
+    position: relative;
+}
+
+
+.show-items-container .left-element {
+   
+    display: inline-block;
+    position: absolute;
+    left: 0;
+	z-index:100;
+	top: 45px;
+	/*top: 90px;*/
+}
+.show-items-container2 .center-element {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.show-items-container .right-element {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+	top: 45px;
+	/*top: 90px;*/
+	z-index:100;
+}
+
+
+
+.owl-carousel .owl-item .tile__img_l {
+    width: 64px !important;
+}
