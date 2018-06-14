@@ -36,7 +36,7 @@ body {
 }
 
 .navbar {
-	height: 60px;
+	height: 30px;
 	border-bottom: 2px solid #ff9900 !important;
 }
 
@@ -401,7 +401,7 @@ body {
     height: 98px;
 	border-bottom: 1px solid #316A86;
 	padding-bottom: 15px;
-	padding-top: 30px;
+	padding-top: 15px;
 	padding-left: 15px;
 	background-color: #f2f2f2;
 	position: relative;
@@ -415,8 +415,7 @@ body {
 	position: relative;
 	margin-right: auto;
 	margin-left: auto;
-	border: 1px solid black;
-    padding: 5px;
+	border: 2px solid #ddd;
 }
 .search .bg-image .txt, .learn .bg-image .txt {
 	position: absolute;
@@ -432,7 +431,8 @@ body {
 .learn {
     height: 250px;
     padding-right: 5%;
-    border-bottom: 1px solid #999;
+    padding-top: 15px;
+    border-bottom: 1px solid #316A86;
 }
 
 .learn .sub-header {
@@ -461,15 +461,22 @@ body {
 }
 
 .learn .second-row {
-	position: relative;
+    position: relative;
+    bottom: 6px;
 }
 
 .sub-logs {
 	
 	height: 100%;
-    overflow: scroll;
+    overflow: auto;
 	padding: 15px;
-	padding-bottom: 100px;
+    padding-bottom: 100px;
+    list-style-type: none;
+}
+
+.sub-logs li {
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .border-right {
@@ -484,9 +491,6 @@ body {
 	margin-bottom: 20px;
 }
 
-.center-column {
-	padding-top: 30px;
-}
 .right-column {
 	/*border-left: 1px solid #5B9BD5;*/
 	box-shadow: -2px 0px 8px 0px #ccc;/*0px -3px 5px 6px #ccc;*/ 
@@ -564,8 +568,7 @@ body {
 	min-height: 150px;
 	margin-right: auto;
 	margin-left: auto;
-	border: 1px solid black;
-    padding: 5px;
+	border: 1px solid #999;
 }
 
 .learn .bottom-row {
@@ -646,7 +649,7 @@ body {
     line-height: 1.42857143;
     background-color: #fff;
     border-radius: 4px;
-	border: 1px solid #333;
+	border: 1px solid #999;
     -webkit-transition: border .2s ease-in-out;
     -o-transition: border .2s ease-in-out;
     transition: border .2s ease-in-out;
@@ -704,8 +707,8 @@ body {
 }
 
 .log-holder {
+    width: 101%;
     height: 100%;
-    overflow: auto;
     padding-left: 15px;
 }
 
@@ -747,7 +750,6 @@ body {
 
 .logs2 {
 	height: 100%;
-    overflow: auto;
 }
 
 .comments {
@@ -755,7 +757,7 @@ body {
 	animation:commentsAnim  ease-in 4s infinite;
 	font-size: 3rem;
 	position:absolute;
-	top: 35px;
+	top: 20px;
     right: 15px;
 }
 

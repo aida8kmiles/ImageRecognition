@@ -69,7 +69,7 @@ class Logs extends Component {
 				var d = new Date(arr[i].current);
 				var d2 = d.toUTCString();
 				var d3 = d.toString();
-				arr2.push(<div key={i}>[{d2}] <br /><b>{arr[i].text}</b></div>);	
+				arr2.push(<li key={i}>[{d2}] <br /><b>{arr[i].text}</b></li>);	
 			}
 		}
 		return (
@@ -78,8 +78,8 @@ class Logs extends Component {
 				<div className="row log-holder">
 					{
 						arr.length > 0 ?
-						<div className="sub-logs">{arr2}
-						</div>
+						<ul className="sub-logs">{arr2}
+						</ul>
 						:
 						<div className="sub-logs">No Logs Found.
 						</div>
